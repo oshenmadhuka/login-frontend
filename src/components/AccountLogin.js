@@ -38,7 +38,7 @@ export default function AccountLogin() {
 
     <div className='maincon'>
         <div className='left-side-container'>
-          <img src={coverimage} className='cover-image' />
+          <img src={coverimage} className='cover-image' alt='cover' />
         </div>
         <div className='right-container'>
         <div className='container1'>

@@ -28,7 +28,7 @@ const SignupForm = () => {
     return (
         <div className='maincon'>
         <div className='left-side-container'>
-          <img src={coverimage} className='cover-image' />
+          <img src={coverimage} className='cover-image' alt='ck'/>
         </div>
         <div className='right-container'>
         <div className='container1'>
