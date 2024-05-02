@@ -28,8 +28,10 @@ jobs:
           npm run test --if-present
 
       - name: Install dependencies
-        run: npm install
-        run: npn install axios
+        run: |
+          npm install
+          npm install axios
+
 
       - name: Build and treat warnings as errors
         run: |
