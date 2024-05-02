@@ -3,7 +3,7 @@ import '../styles/accountlogin.css';
 import UserTypes from './UserTypes';
 import { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
-import axios from 'axios';
+const axios = require('axios');
 import coverimage from '../assest/coverimage.png'
 
 export default function AccountLogin() {
