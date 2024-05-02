@@ -1,19 +1,13 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from './App';
 
 // Mock URL.createObjectURL
 window.URL.createObjectURL = function() {};
 
-test('renders learn react link', async () => {
+test('renders learn react link', () => {
   render(<App />);
   
-  // Wait for the element to appear
-  await waitFor(() => {
-    const linkElement = screen.queryByText((content, element) => {
-      const normalizedText = element.textContent.trim().toLowerCase();
-      return normalizedText.includes('learn react');
-    });
-    
-    expect(linkElement).toBeInTheDocument();
-  });
+  // Check for specific text within a paragraph element
+  const paragraphElement = screen.getByText('If you are already a member you can login with your email address and password');
+  expect(paragraphElement).toBeInTheDocument();
 });
