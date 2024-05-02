@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 // Mock URL.createObjectURL
-window.URL.createObjectURL = jest.fn(() => 'mocked-url');
+window.URL.createObjectURL = function() {};
+
 
 
 test('renders learn react link', () => {
