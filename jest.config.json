@@ -1,7 +1,8 @@
-
-
 {
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
+    "jest": {
+      "transform": {
+        "^.+\\.jsx?$": "babel-jest"
+      }
     }
-}
+  }
+  
